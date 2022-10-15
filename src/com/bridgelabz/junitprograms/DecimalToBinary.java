@@ -3,14 +3,14 @@ import java.util.Scanner;
 
 // Decimal to binary : 106 = 1101010
 
-public class Binary {
+public class DecimalToBinary {
     public static String toBinary(int n){
         String binary = "";
-        int n1 = n; // storing the value of n in n1
-        while (n1>0){        // n = 106
-            int rem = n1%2;  // rem = 106%2 = 0
-            n1 = n1/2;       // n1 = 106/2 = 53 new value of n1
-            binary = rem + binary;   // binary = 0
+        int n1 = n;
+        while (n1>0){
+            int rem = n1%2;
+            n1 = n1/2;
+            binary = rem + binary;
         }
         System.out.println("Binary of " + n + " is " + binary);
         return binary;
