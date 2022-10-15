@@ -4,7 +4,7 @@ import java.util.Scanner;
 // Decimal to binary : 106 = 1101010
 
 public class Binary {
-    public static void toBinary(int n){
+    public static String toBinary(int n){
         String binary = "";
         int n1 = n; // storing the value of n in n1
         while (n1>0){        // n = 106
@@ -13,7 +13,9 @@ public class Binary {
             binary = rem + binary;   // binary = 0
         }
         System.out.println("Binary of " + n + " is " + binary);
+        return binary;
     }
+
 
     public static void main(String[] args) {
         System.out.println("Welcome to the 'Decimal to Binary' Java Program");
